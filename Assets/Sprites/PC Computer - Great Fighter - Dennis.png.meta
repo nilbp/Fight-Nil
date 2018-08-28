@@ -1,0 +1,1853 @@
+fileFormatVersion: 2
+guid: ffda6af1bb3e2574d8d027ba7487b6bd
+timeCreated: 1535148438
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PC Computer - Great Fighter - Dennis_0
+    21300002: PC Computer - Great Fighter - Dennis_1
+    21300004: PC Computer - Great Fighter - Dennis_2
+    21300006: PC Computer - Great Fighter - Dennis_3
+    21300008: PC Computer - Great Fighter - Dennis_4
+    21300010: PC Computer - Great Fighter - Dennis_5
+    21300012: PC Computer - Great Fighter - Dennis_6
+    21300014: PC Computer - Great Fighter - Dennis_7
+    21300016: PC Computer - Great Fighter - Dennis_8
+    21300018: PC Computer - Great Fighter - Dennis_9
+    21300020: PC Computer - Great Fighter - Dennis_10
+    21300022: PC Computer - Great Fighter - Dennis_11
+    21300024: PC Computer - Great Fighter - Dennis_12
+    21300026: PC Computer - Great Fighter - Dennis_13
+    21300028: PC Computer - Great Fighter - Dennis_14
+    21300030: PC Computer - Great Fighter - Dennis_15
+    21300032: PC Computer - Great Fighter - Dennis_16
+    21300034: PC Computer - Great Fighter - Dennis_17
+    21300036: PC Computer - Great Fighter - Dennis_18
+    21300038: PC Computer - Great Fighter - Dennis_19
+    21300040: PC Computer - Great Fighter - Dennis_20
+    21300042: PC Computer - Great Fighter - Dennis_21
+    21300044: PC Computer - Great Fighter - Dennis_22
+    21300046: PC Computer - Great Fighter - Dennis_23
+    21300048: PC Computer - Great Fighter - Dennis_24
+    21300050: PC Computer - Great Fighter - Dennis_25
+    21300052: PC Computer - Great Fighter - Dennis_26
+    21300054: PC Computer - Great Fighter - Dennis_27
+    21300056: PC Computer - Great Fighter - Dennis_28
+    21300058: PC Computer - Great Fighter - Dennis_29
+    21300060: PC Computer - Great Fighter - Dennis_30
+    21300062: PC Computer - Great Fighter - Dennis_31
+    21300064: PC Computer - Great Fighter - Dennis_32
+    21300066: PC Computer - Great Fighter - Dennis_33
+    21300068: PC Computer - Great Fighter - Dennis_34
+    21300070: PC Computer - Great Fighter - Dennis_35
+    21300072: PC Computer - Great Fighter - Dennis_36
+    21300074: PC Computer - Great Fighter - Dennis_37
+    21300076: PC Computer - Great Fighter - Dennis_38
+    21300078: PC Computer - Great Fighter - Dennis_39
+    21300080: PC Computer - Great Fighter - Dennis_40
+    21300082: PC Computer - Great Fighter - Dennis_41
+    21300084: PC Computer - Great Fighter - Dennis_42
+    21300086: PC Computer - Great Fighter - Dennis_43
+    21300088: PC Computer - Great Fighter - Dennis_44
+    21300090: PC Computer - Great Fighter - Dennis_45
+    21300092: PC Computer - Great Fighter - Dennis_46
+    21300094: PC Computer - Great Fighter - Dennis_47
+    21300096: PC Computer - Great Fighter - Dennis_48
+    21300098: PC Computer - Great Fighter - Dennis_49
+    21300100: PC Computer - Great Fighter - Dennis_50
+    21300102: PC Computer - Great Fighter - Dennis_51
+    21300104: PC Computer - Great Fighter - Dennis_52
+    21300106: PC Computer - Great Fighter - Dennis_53
+    21300108: PC Computer - Great Fighter - Dennis_54
+    21300110: PC Computer - Great Fighter - Dennis_55
+    21300112: PC Computer - Great Fighter - Dennis_56
+    21300114: PC Computer - Great Fighter - Dennis_57
+    21300116: PC Computer - Great Fighter - Dennis_58
+    21300118: PC Computer - Great Fighter - Dennis_59
+    21300120: PC Computer - Great Fighter - Dennis_60
+    21300122: PC Computer - Great Fighter - Dennis_61
+    21300124: PC Computer - Great Fighter - Dennis_62
+    21300126: PC Computer - Great Fighter - Dennis_63
+    21300128: PC Computer - Great Fighter - Dennis_64
+    21300130: PC Computer - Great Fighter - Dennis_65
+    21300132: PC Computer - Great Fighter - Dennis_66
+    21300134: PC Computer - Great Fighter - Dennis_67
+    21300136: PC Computer - Great Fighter - Dennis_68
+    21300138: PC Computer - Great Fighter - Dennis_69
+    21300140: PC Computer - Great Fighter - Dennis_70
+    21300142: PC Computer - Great Fighter - Dennis_71
+    21300144: PC Computer - Great Fighter - Dennis_72
+    21300146: PC Computer - Great Fighter - Dennis_73
+    21300148: PC Computer - Great Fighter - Dennis_74
+    21300150: PC Computer - Great Fighter - Dennis_75
+    21300152: PC Computer - Great Fighter - Dennis_76
+    21300154: PC Computer - Great Fighter - Dennis_77
+    21300156: PC Computer - Great Fighter - Dennis_78
+    21300158: PC Computer - Great Fighter - Dennis_79
+    21300160: PC Computer - Great Fighter - Dennis_80
+    21300162: PC Computer - Great Fighter - Dennis_81
+    21300164: PC Computer - Great Fighter - Dennis_82
+    21300166: PC Computer - Great Fighter - Dennis_83
+    21300168: PC Computer - Great Fighter - Dennis_84
+    21300170: PC Computer - Great Fighter - Dennis_85
+    21300172: PC Computer - Great Fighter - Dennis_86
+    21300174: PC Computer - Great Fighter - Dennis_87
+    21300176: PC Computer - Great Fighter - Dennis_88
+    21300178: PC Computer - Great Fighter - Dennis_89
+    21300180: PC Computer - Great Fighter - Dennis_90
+    21300182: PC Computer - Great Fighter - Dennis_91
+    21300184: PC Computer - Great Fighter - Dennis_92
+    21300186: PC Computer - Great Fighter - Dennis_93
+    21300188: PC Computer - Great Fighter - Dennis_94
+    21300190: PC Computer - Great Fighter - Dennis_95
+    21300192: PC Computer - Great Fighter - Dennis_96
+    21300194: PC Computer - Great Fighter - Dennis_97
+    21300196: PC Computer - Great Fighter - Dennis_98
+    21300198: PC Computer - Great Fighter - Dennis_99
+    21300200: PC Computer - Great Fighter - Dennis_100
+    21300202: PC Computer - Great Fighter - Dennis_101
+    21300204: PC Computer - Great Fighter - Dennis_102
+    21300206: PC Computer - Great Fighter - Dennis_103
+    21300208: PC Computer - Great Fighter - Dennis_104
+    21300210: PC Computer - Great Fighter - Dennis_105
+    21300212: PC Computer - Great Fighter - Dennis_106
+    21300214: PC Computer - Great Fighter - Dennis_107
+    21300216: PC Computer - Great Fighter - Dennis_108
+    21300218: PC Computer - Great Fighter - Dennis_109
+    21300220: PC Computer - Great Fighter - Dennis_110
+    21300222: PC Computer - Great Fighter - Dennis_111
+    21300224: PC Computer - Great Fighter - Dennis_112
+    21300226: PC Computer - Great Fighter - Dennis_113
+    21300228: PC Computer - Great Fighter - Dennis_114
+    21300230: PC Computer - Great Fighter - Dennis_115
+    21300232: PC Computer - Great Fighter - Dennis_116
+    21300234: PC Computer - Great Fighter - Dennis_117
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1486
+        width: 78
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1486
+        width: 77
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1486
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1486
+        width: 68
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_4
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1486
+        width: 68
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1486
+        width: 68
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_6
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1486
+        width: 68
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_7
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1488
+        width: 71
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_8
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1485
+        width: 65
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1371
+        width: 56
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1371
+        width: 81
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1371
+        width: 66
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1371
+        width: 56
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1371
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_14
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1371
+        width: 95
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_15
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1372
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_16
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1371
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_17
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1371
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1257
+        width: 65
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_19
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1256
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_20
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1257
+        width: 91
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_21
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1257
+        width: 65
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1257
+        width: 71
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_23
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1244
+        width: 74
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_24
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1257
+        width: 91
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_25
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1257
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1147
+        width: 73
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1147
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1146
+        width: 101
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_29
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1147
+        width: 65
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_30
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1147
+        width: 73
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_31
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1147
+        width: 65
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_32
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1147
+        width: 94
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_33
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1147
+        width: 65
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1034
+        width: 69
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_35
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1034
+        width: 99
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_36
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1034
+        width: 69
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_37
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1034
+        width: 76
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_38
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1034
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_39
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1034
+        width: 77
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_40
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1034
+        width: 88
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_41
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1034
+        width: 77
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1034
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_43
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 949
+        width: 81
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_44
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 949
+        width: 113
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_45
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 949
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_46
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 949
+        width: 93
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_47
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 949
+        width: 124
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_48
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 949
+        width: 93
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_49
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 831
+        width: 70
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_50
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 831
+        width: 68
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_51
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 831
+        width: 70
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_52
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 831
+        width: 63
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_53
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 831
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_54
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 831
+        width: 114
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_56
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 721
+        width: 88
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_57
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 721
+        width: 90
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_58
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 720
+        width: 65
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_59
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 721
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_60
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 721
+        width: 91
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_61
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 721
+        width: 73
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_62
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 721
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_63
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 721
+        width: 111
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_64
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 721
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_65
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 600
+        width: 93
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_66
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 598
+        width: 73
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_67
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 599
+        width: 68
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_68
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 599
+        width: 92
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_69
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 599
+        width: 103
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_70
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 599
+        width: 73
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_71
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 598
+        width: 74
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_72
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 600
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_73
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 490
+        width: 73
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_74
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 490
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_75
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 490
+        width: 73
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_76
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 490
+        width: 58
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_77
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 490
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_78
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 490
+        width: 100
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_79
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 489
+        width: 124
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_80
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 490
+        width: 134
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_81
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 374
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_82
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 264
+        width: 134
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_83
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 374
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_84
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 264
+        width: 133
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_85
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 374
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_86
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 374
+        width: 121
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_87
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 367
+        width: 118
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_88
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 374
+        width: 73
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_89
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 374
+        width: 73
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_90
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 263
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_91
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 374
+        width: 86
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_92
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 374
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_93
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 264
+        width: 111
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_94
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 322
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_95
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 264
+        width: 111
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_96
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 264
+        width: 56
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_97
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 264
+        width: 110
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_98
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 264
+        width: 87
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_99
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 141
+        width: 71
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_100
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 142
+        width: 67
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_101
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 142
+        width: 67
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_102
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 142
+        width: 117
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_103
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 141
+        width: 111
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_104
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 141
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_105
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 207
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_106
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 215
+        width: 71
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_107
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 26
+        width: 67
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_108
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 26
+        width: 67
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_109
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 26
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_110
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 26
+        width: 113
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_111
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 27
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_112
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 26
+        width: 113
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_113
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 27
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_114
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 90
+        width: 5
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_115
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 112
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_116
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 82
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Great Fighter - Dennis_117
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 45
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
