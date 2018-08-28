@@ -31,6 +31,11 @@ public class FighterStateBehaviour : StateMachineBehaviour {
 
         fighter.currentState = behaviourState;
 
+        if (behaviourState == FighterState.TAKE_HIT_AIR)
+        {
+            fighter.rb.AddRelativeForce(new Vector2(0, fighter.rb.velocity.y * -1));
+        }
+
         fighter.rb.AddRelativeForce(new Vector2(0, verticalForce));
         fighter.transform.Translate(new Vector2(0, verticalTransform));
 
@@ -44,6 +49,7 @@ public class FighterStateBehaviour : StateMachineBehaviour {
 
         playerFacing = fighter.playerFacing;
 
+        
     }
 
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

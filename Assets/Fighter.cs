@@ -31,12 +31,10 @@ public class Fighter : MonoBehaviour {
     //Oponent
     public Fighter oponent;
 
-    public float horizontalForce;
-    public float verticalForce;
-
     //Estat del jugador
     public FighterState currentState = FighterState.IDLE;
 
+    public bool IsGrounded;
 
     //Colliders 
     public Collider HurtBoxTorso;
@@ -87,7 +85,10 @@ public class Fighter : MonoBehaviour {
 	void Update () {
 
         horizontalMove = Input.GetAxisRaw(horizontalMovement);
-        animator.SetBool("IsGrounded", groundCheck.IsTouching(floorCollider));
+
+        IsGrounded = groundCheck.IsTouching(floorCollider);
+
+        animator.SetBool("IsGrounded", IsGrounded);
 
         //facing each other handdle
         if (gameObject.transform.position.x > oponent.gameObject.transform.position.x)
@@ -155,7 +156,7 @@ public class Fighter : MonoBehaviour {
 
     }
 
-    public void GetHurt(string mode, float horizontalForce, float verticalForce)
+    public void GetHurt(string mode)
     {
         if (mode == "Floor")
         {
@@ -179,5 +180,6 @@ public class Fighter : MonoBehaviour {
     {
         animator.SetBool(animName, true);
     }
+
 
 }

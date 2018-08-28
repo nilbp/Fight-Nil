@@ -6,6 +6,9 @@ public class HitBoxCollider : MonoBehaviour {
 
     Fighter fighterOponent;
 
+    public int comboCounter;
+    public float comboCounterPercentage = 0;
+
     public static float damage;
     public static bool launcherAttack;
 
@@ -31,21 +34,46 @@ public class HitBoxCollider : MonoBehaviour {
 
             fighterOponent.life -= damage;
 
-            if (!launcherAttack)
+            if (fighterOponent.currentState == FighterState.TAKE_HIT_AIR)
             {
-                fighterOponent.GetHurt("Floor", horizontalForce, verticalForce);
+                //Està en el aire
+
+                fighterOponent.GetHurt("Air");
+
+                if (!launcherAttack)
+                {
+                    fighterOponent.rb.AddRelativeForce(new Vector2(0, verticalForce));                  
+                }
+
+                comboCounter++;
+                comboCounterPercentage += damage;
             }
 
             else
             {
-                fighterOponent.GetHurt("Air", horizontalForce, verticalForce);
+                comboCounter = 0;
+                comboCounterPercentage = 0;
 
-                fighterOponent.verticalForce = 100f;
 
+                if (fighterOponent.currentState != FighterState.TAKE_HIT_AIR)
+                {
+                    if (launcherAttack)
+                    {
+                        fighterOponent.GetHurt("Air");
+                        fighterOponent.rb.AddRelativeForce(new Vector2(0, verticalForce));
+
+                        comboCounter++;
+                        comboCounterPercentage += damage;
+
+                    }
+
+                    else if (!launcherAttack)
+                    {
+                        fighterOponent.GetHurt("Floor");
+
+                    }
+                }
             }
-
-            Debug.Log(fighterOponent.life);
-
         }
     }
 }

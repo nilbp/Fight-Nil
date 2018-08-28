@@ -137,7 +137,7 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 0
+  hitVerticalForce: 140
   damage: 6
   launcherAttack: 0
 --- !u!114 &114113804073523156
@@ -177,7 +177,7 @@ MonoBehaviour:
   horizontalTransform: 0.02
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 0
+  hitVerticalForce: 160
   damage: 3
   launcherAttack: 0
 --- !u!114 &114154763344952558
@@ -197,7 +197,7 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 0
+  hitVerticalForce: 200
   damage: 5
   launcherAttack: 1
 --- !u!114 &114162440395700328
@@ -216,7 +216,7 @@ MonoBehaviour:
   verticalForce: 0
   horizontalTransform: 0
   verticalTransform: 0
-  hitHorizontalForce: 0
+  hitHorizontalForce: 200
   hitVerticalForce: 0
   damage: 5
   launcherAttack: 1
@@ -231,10 +231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afedf8cf1d616ff4aaa7dd2e42482168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviourState: 6
+  behaviourState: 7
   horizontalForce: 0
-  verticalForce: 250
-  horizontalTransform: -0.02
+  verticalForce: 0
+  horizontalTransform: -0.01
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afedf8cf1d616ff4aaa7dd2e42482168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviourState: 8
+  behaviourState: 9
   horizontalForce: 0
   verticalForce: 0
   horizontalTransform: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
   horizontalTransform: 0.03
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 0
+  hitVerticalForce: 200
   damage: 7
   launcherAttack: 0
 --- !u!114 &114266312306518560
@@ -311,9 +311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afedf8cf1d616ff4aaa7dd2e42482168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviourState: 6
+  behaviourState: 7
   horizontalForce: 0
-  verticalForce: 250
+  verticalForce: 0
   horizontalTransform: -0.02
   verticalTransform: 0
   hitHorizontalForce: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 0
+  hitVerticalForce: 300
   damage: 5
   launcherAttack: 1
 --- !u!114 &114317039408773448
@@ -462,7 +462,7 @@ MonoBehaviour:
   horizontalTransform: -0.03
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 0
+  hitVerticalForce: 200
   damage: 7
   launcherAttack: 0
 --- !u!114 &114549647952895390
@@ -482,7 +482,7 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 0
+  hitVerticalForce: 320
   damage: 7
   launcherAttack: 1
 --- !u!114 &114580028956084004
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afedf8cf1d616ff4aaa7dd2e42482168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviourState: 7
+  behaviourState: 8
   horizontalForce: 0
   verticalForce: 0
   horizontalTransform: -0.01
@@ -673,7 +673,7 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 0
-  damage: 12
+  damage: 17
   launcherAttack: 0
 --- !u!114 &114987250849772344
 MonoBehaviour:
@@ -1068,9 +1068,6 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: Hurt Floor
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: IsCrouching
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: Laid Down
@@ -1525,6 +1522,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: Laid Down
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: IsDefending
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102588451322968850}
   m_Solo: 0
@@ -1764,6 +1764,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: Laid Down
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: IsDefending
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102116174509634104}
@@ -2742,7 +2745,7 @@ AnimatorStateMachine:
     m_Position: {x: -48, y: 156, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102518392025965226}
-    m_Position: {x: 204, y: 240, z: 0}
+    m_Position: {x: 252, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102373255103821610}
     m_Position: {x: -48, y: 216, z: 0}
@@ -2778,7 +2781,7 @@ AnimatorStateMachine:
     m_Position: {x: 648, y: 336, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102713650669206732}
-    m_Position: {x: 924, y: 144, z: 0}
+    m_Position: {x: 948, y: 156, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102749733967708444}
     m_Position: {x: 0, y: 24, z: 0}
