@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Laid Down_Kung
+  m_Name: Defend Hit_Kung
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,9 +19,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300400, guid: 67e41954190704893a6255140ed3c6aa, type: 3}
-    - time: 1
-      value: {fileID: 21300400, guid: 67e41954190704893a6255140ed3c6aa, type: 3}
+      value: {fileID: 21300044, guid: 67e41954190704893a6255140ed3c6aa, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -41,14 +39,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300400, guid: 67e41954190704893a6255140ed3c6aa, type: 3}
-    - {fileID: 21300400, guid: 67e41954190704893a6255140ed3c6aa, type: 3}
+    - {fileID: 21300044, guid: 67e41954190704893a6255140ed3c6aa, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1
+    m_StopTime: 0.1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -68,39 +65,4 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events:
-  - time: 1
-    functionName: EndAnimation
-    data: IsCrouching
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1
-    functionName: EndAnimation
-    data: Laid Down
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1
-    functionName: EndAnimation
-    data: IsJumping
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1
-    functionName: EndAnimation
-    data: Stand1
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1
-    functionName: EndAnimation
-    data: Stand2
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

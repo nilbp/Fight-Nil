@@ -17,11 +17,12 @@ public class FighterStateBehaviour : StateMachineBehaviour {
     public float damage;
     public bool launcherAttack;
 	public float stunTime;
+    public float defenseStun;
 
-	public float HorizontalForceReducedEachHitInCombo;
-	public float VerticalForceReducedEachHitInCombo;
+    //public float HorizontalForceReducedEachHitInCombo;
+    public float VerticalForceReducedEachHitInCombo;
 
-	public int numberOfTimesTheHitWasDoneInCombo = 0;
+    public int comboID;
 
     Fighter fighter;
 
@@ -36,10 +37,6 @@ public class FighterStateBehaviour : StateMachineBehaviour {
 
 		if (behaviourState == FighterState.ATTACK)
 		{
-			//reduce force if there was more hits like this in the combo
-			//hitHorizontalForce += numberOfTimesTheHitWasDoneInCombo * HorizontalForceReducedEachHitInCombo; //more horizontalForce farther you launch the oponent and is more dificult to continue combo
-			hitVerticalForce -= numberOfTimesTheHitWasDoneInCombo * VerticalForceReducedEachHitInCombo;
-
 			HitBoxCollider.fighterState = this;
 		}
 

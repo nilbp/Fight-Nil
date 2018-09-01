@@ -128,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368607354583288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.044, y: -0.567, z: 0}
+  m_LocalPosition: {x: -0.044, y: -0.528, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4370921812639902}
@@ -208,9 +208,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.16053051, y: -0.05889678}
-      - {x: -0.049999952, y: -0.52}
-      - {x: -0.23633432, y: -0.053771973}
+    - - {x: 0.112286925, y: -0.020301819}
+      - {x: 0.114195585, y: -0.15848374}
+      - {x: -0.049999952, y: -0.50587654}
+      - {x: -0.24919921, y: -0.14382648}
+      - {x: -0.26206422, y: 0.062012315}
       - {x: -0.06705308, y: 0.58443534}
 --- !u!95 &95180203750952480
 Animator:
@@ -246,15 +248,14 @@ MonoBehaviour:
   stunTime: 0
   playerFacing: 0
   rb: {fileID: 50155883671839152}
-  playerType: 2
+  playerType: 1
   oponent: {fileID: 0}
   currentState: 0
   IsGrounded: 0
   HurtBoxTorso: {fileID: 0}
   HurtBoxLegs: {fileID: 0}
   groundCheck: {fileID: 58931846708100246}
-  floorCollider: {fileID: 61113552750864748, guid: 9a111ae87a67842d6837efa1e16d25a4,
-    type: 2}
+  floorCollider: {fileID: 0}
 --- !u!114 &114974997876095336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,7 +268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   comboCounter: 0
-  comboCounterPercentage: 0
+  comboDamageCounter: 0
+  comboHitData: 
 --- !u!212 &212161660239789562
 SpriteRenderer:
   m_ObjectHideFlags: 1

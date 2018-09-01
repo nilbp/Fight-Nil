@@ -13,121 +13,127 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Stand1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Stand2
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Walk Back
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Walk
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Back1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: IsJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: IsGrounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Hurt Floor
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: HurtAir
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: IsDefending
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Defend Hit
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Laid Down
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: SpecialCancel
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: IsInDefenceStance
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Stuned
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: PlayingSpecial
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Down Back
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Down Forward
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Back Forward
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
+  - m_Name: Defense Recover
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -156,6 +162,30 @@ MonoBehaviour:
   verticalTranslate: 0
   horizontalForce: 0
   verticalForce: 250
+--- !u!114 &114018347104139732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afedf8cf1d616ff4aaa7dd2e42482168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviourState: 5
+  horizontalForce: 0
+  verticalForce: 0
+  horizontalTransform: 0
+  verticalTransform: 0
+  hitHorizontalForce: 0
+  hitVerticalForce: 130
+  damage: 2
+  launcherAttack: 0
+  stunTime: 0.2
+  defenseStun: 0.04
+  VerticalForceReducedEachHitInCombo: 30
+  comboID: 0
 --- !u!114 &114100820945782858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,13 +203,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 140
-  damage: 7
+  hitVerticalForce: 120
+  damage: 2
   launcherAttack: 0
-  stunTime: 0.4
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  stunTime: 0.7
+  defenseStun: 0.3
+  VerticalForceReducedEachHitInCombo: 30
+  comboID: 5
 --- !u!114 &114113804073523156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,9 +231,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114141730388617126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,9 +255,9 @@ MonoBehaviour:
   damage: 3
   launcherAttack: 1
   stunTime: 0.6
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.5
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 17
 --- !u!114 &114154763344952558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,12 +276,12 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 10
   hitVerticalForce: 60
-  damage: 5
+  damage: 3
   launcherAttack: 0
-  stunTime: 0.6
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  stunTime: 0.4
+  defenseStun: 0.1
+  VerticalForceReducedEachHitInCombo: 30
+  comboID: 2
 --- !u!114 &114162440395700328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -272,10 +302,10 @@ MonoBehaviour:
   hitVerticalForce: 120
   damage: 3
   launcherAttack: 0
-  stunTime: 0.5
-  HorizontalForceReducedEachHitInCombo: 0
+  stunTime: 0.7
+  defenseStun: 0.3
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 8
 --- !u!114 &114173969989619966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,9 +327,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114235874883125380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,33 +351,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
---- !u!114 &114254572497051244
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afedf8cf1d616ff4aaa7dd2e42482168, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  behaviourState: 5
-  horizontalForce: -50
-  verticalForce: 120
-  horizontalTransform: 0
-  verticalTransform: 0
-  hitHorizontalForce: 150
-  hitVerticalForce: 50
-  damage: 9
-  launcherAttack: 1
-  stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114257565944325118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,9 +375,9 @@ MonoBehaviour:
   damage: 7
   launcherAttack: 1
   stunTime: 1
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.3
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 15
 --- !u!114 &114266312306518560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -393,9 +399,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114289158557635762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -423,18 +429,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviourState: 5
-  horizontalForce: 0
-  verticalForce: 0
+  horizontalForce: 80
+  verticalForce: 210
   horizontalTransform: 0
   verticalTransform: 0
-  hitHorizontalForce: 5
-  hitVerticalForce: 40
-  damage: 4
+  hitHorizontalForce: 130
+  hitVerticalForce: 20
+  damage: 14
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.4
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 13
 --- !u!114 &114317039408773448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -471,9 +477,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114339578888678920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,9 +501,9 @@ MonoBehaviour:
   damage: 13
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.6
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 19
 --- !u!114 &114381940242701828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -514,14 +520,14 @@ MonoBehaviour:
   verticalForce: 160
   horizontalTransform: 0
   verticalTransform: 0
-  hitHorizontalForce: 10
-  hitVerticalForce: 60
+  hitHorizontalForce: 30
+  hitVerticalForce: 90
   damage: 7
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.2
   VerticalForceReducedEachHitInCombo: 50
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 14
 --- !u!114 &114384741605160384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -540,12 +546,12 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 20
   hitVerticalForce: 60
-  damage: 4
+  damage: 2
   launcherAttack: 0
   stunTime: 0.6
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  defenseStun: 0.4
+  VerticalForceReducedEachHitInCombo: 30
+  comboID: 1
 --- !u!114 &114430570553269868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -564,12 +570,12 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 100
-  damage: 8
+  damage: 2
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.2
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 9
 --- !u!114 &114441887838009456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -591,9 +597,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114451622648436828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -615,9 +621,9 @@ MonoBehaviour:
   damage: 6
   launcherAttack: 0
   stunTime: 1
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.3
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 18
 --- !u!114 &114451830305320134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -630,18 +636,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviourState: 5
-  horizontalForce: 80
-  verticalForce: 210
+  horizontalForce: 0
+  verticalForce: 0
   horizontalTransform: 0
   verticalTransform: 0
-  hitHorizontalForce: 130
-  hitVerticalForce: 20
-  damage: 10
+  hitHorizontalForce: 5
+  hitVerticalForce: 50
+  damage: 6
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.4
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114455282840800466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -678,9 +684,9 @@ MonoBehaviour:
   damage: 15
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  defenseStun: 0.7
+  VerticalForceReducedEachHitInCombo: 50
+  comboID: 11
 --- !u!114 &114491853066403476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -702,9 +708,9 @@ MonoBehaviour:
   damage: 7
   launcherAttack: 1
   stunTime: 1
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0.3
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 16
 --- !u!114 &114580028956084004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -741,9 +747,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114701395153511910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -765,9 +771,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114726924569198976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -789,9 +795,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114749223093653142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -810,12 +816,12 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 40
   hitVerticalForce: 200
-  damage: 8
+  damage: 7
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  defenseStun: 0.1
+  VerticalForceReducedEachHitInCombo: 70
+  comboID: 4
 --- !u!114 &114770491109406950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -836,10 +842,10 @@ MonoBehaviour:
   hitVerticalForce: -100
   damage: 14
   launcherAttack: 1
-  stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  stunTime: 0.7
+  defenseStun: 0.2
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 7
 --- !u!114 &114798065030846314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -861,9 +867,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114812955678947858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -896,13 +902,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 40
-  damage: 10
+  hitVerticalForce: 70
+  damage: 6
   launcherAttack: 0
-  stunTime: 0.6
-  HorizontalForceReducedEachHitInCombo: 0
+  stunTime: 0.9
+  defenseStun: 0.3
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 3
 --- !u!114 &114890463285721726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -924,9 +930,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114903320525232538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -941,16 +947,16 @@ MonoBehaviour:
   behaviourState: 8
   horizontalForce: 0
   verticalForce: 0
-  horizontalTransform: -0.01
+  horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 0
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 0
 --- !u!114 &114957462341561162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -969,12 +975,12 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 20
   hitVerticalForce: 120
-  damage: 6
+  damage: 5
   launcherAttack: 1
-  stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  stunTime: 0.5
+  defenseStun: 0.1
   VerticalForceReducedEachHitInCombo: 100
-  numberOfTimesTheHitWasDoneInCombo: 0
+  comboID: 6
 --- !u!114 &114987250849772344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1107,7 +1113,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.7
+  m_ExitTime: 0.5021739
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -1140,7 +1146,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 0.1711956
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -1239,6 +1245,27 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101189748428715548
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102615300640229384}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101189821954575574
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1296,7 +1323,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Defense Recover
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102749733967708444}
   m_Solo: 0
@@ -1311,7 +1341,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101263701808328590
+--- !u!1101 &1101256115620874116
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1319,31 +1349,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Stand2
+    m_ConditionEvent: Stand1
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102373062024818346}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101286339999341330
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102671814877438224}
+  m_DstState: {fileID: 1102612758395401354}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1351,7 +1360,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 1
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1626,6 +1635,27 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!1101 &1101443931345210532
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102612758395401354}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.16666669
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101463924786540472
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1995,7 +2025,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
-  m_ExitTime: 0.7222222
+  m_ExitTime: 1
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -2148,7 +2178,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.5
+  m_ExitTime: 0.30197006
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -2172,7 +2202,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0
+  m_ExitTime: 0.01
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -2844,7 +2874,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d01f83e9813e9460c9a52aba1f15e7d6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3a210cbbc6e8142cebcd8fcd11e74b33, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2985,58 +3015,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102294476554679086
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Recover_Kung
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7681b9008efb968408fb270981fbbd0e, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102373062024818346
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Back 2
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101286339999341330}
-  m_StateMachineBehaviours:
-  - {fileID: 114254572497051244}
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &1102373255103821610
 AnimatorState:
   serializedVersion: 5
@@ -3114,7 +3092,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3a210cbbc6e8142cebcd8fcd11e74b33, type: 2}
+  m_Motion: {fileID: 7400000, guid: d01f83e9813e9460c9a52aba1f15e7d6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3174,6 +3152,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102612758395401354
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Down 1_Kung
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101189748428715548}
+  m_StateMachineBehaviours:
+  - {fileID: 114018347104139732}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 004932acf2c46bd41b8f9a651d540e1e, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102615300640229384
 AnimatorState:
   serializedVersion: 5
@@ -3186,6 +3191,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: 1101000243872161422}
   - {fileID: 1101032982571839840}
+  - {fileID: 1101256115620874116}
   m_StateMachineBehaviours:
   - {fileID: 114701395153511910}
   m_Position: {x: 50, y: 50, z: 0}
@@ -3303,7 +3309,6 @@ AnimatorState:
   - {fileID: 1101555578399217334}
   - {fileID: 1101943139577237224}
   - {fileID: 1101649567377117616}
-  - {fileID: 1101263701808328590}
   m_StateMachineBehaviours:
   - {fileID: 114113804073523156}
   m_Position: {x: 50, y: 50, z: 0}
@@ -3370,7 +3375,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 933f94f08261e814a818521d7dd18fea, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3458,31 +3463,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102842956291848660
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Laid Down_Kung
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 77341d9970347fe43b5b72268406fca1, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &1102851969312424890
 AnimatorState:
   serializedVersion: 5
@@ -3561,7 +3541,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 2bc69a69638552f459e46b2344617241, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3586,7 +3566,7 @@ AnimatorStateMachine:
     m_Position: {x: 324, y: -36, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102615300640229384}
-    m_Position: {x: -72, y: 300, z: 0}
+    m_Position: {x: -60, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102763477610222438}
     m_Position: {x: 108, y: 372, z: 0}
@@ -3636,14 +3616,11 @@ AnimatorStateMachine:
     m_State: {fileID: 1102959623505331538}
     m_Position: {x: -312, y: 204, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102373062024818346}
-    m_Position: {x: 960, y: 228, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: 1102270098720594184}
     m_Position: {x: 936, y: 24, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102239538343499390}
-    m_Position: {x: -156, y: 372, z: 0}
+    m_Position: {x: -168, y: 396, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102638816413536902}
     m_Position: {x: 348, y: 432, z: 0}
@@ -3672,11 +3649,8 @@ AnimatorStateMachine:
     m_State: {fileID: 1102251714340816448}
     m_Position: {x: 1200, y: 120, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102842956291848660}
-    m_Position: {x: 1235, y: 185, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102294476554679086}
-    m_Position: {x: 1270, y: 250, z: 0}
+    m_State: {fileID: 1102612758395401354}
+    m_Position: {x: -324, y: 336, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101878214601366862}

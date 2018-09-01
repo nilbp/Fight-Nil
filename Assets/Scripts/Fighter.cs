@@ -26,6 +26,9 @@ public class Fighter : MonoBehaviour {
 	//Variable Stun
 	public float stunTime;
 
+    //Defense recover
+    public float defenseRecoverTime;
+
 	//Variables per atacs especials
 	float downSpecial;
 	float forwardSpecial;
@@ -201,6 +204,15 @@ public class Fighter : MonoBehaviour {
         {
             animator.SetBool("IsDefending", false);
         }
+
+        //Defence recover
+        if (defenseRecoverTime > 0)
+        {
+            animator.SetBool("Defense Recover", false);
+            defenseRecoverTime-= 1 * Time.deltaTime;
+        }
+        else
+            animator.SetBool("Defense Recover", true);
 
         //STAND 1
         if (Input.GetButtonDown(stand1))

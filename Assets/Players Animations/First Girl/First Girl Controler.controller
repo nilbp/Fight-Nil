@@ -122,6 +122,18 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: Playing Special
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Defense Recover
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -167,12 +179,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 140
+  hitVerticalForce: 240
   damage: 5
   launcherAttack: 0
   stunTime: 0.4
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 30
+  comboID: 4
 --- !u!114 &114113804073523156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,8 +207,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114141730388617126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,12 +227,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 160
+  hitVerticalForce: 230
   damage: 3
   launcherAttack: 0
   stunTime: 0.6
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 35
+  comboID: 7
 --- !u!114 &114154763344952558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,8 +255,9 @@ MonoBehaviour:
   damage: 5
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 2
 --- !u!114 &114162440395700328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,8 +279,9 @@ MonoBehaviour:
   damage: 5
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 20
+  comboID: 9
 --- !u!114 &114173969989619966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,8 +303,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114235874883125380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,8 +327,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114254572497051244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -332,8 +351,9 @@ MonoBehaviour:
   damage: 9
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 10
 --- !u!114 &114257565944325118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -351,12 +371,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 80
-  hitVerticalForce: 50
+  hitVerticalForce: 70
   damage: 7
   launcherAttack: 1
   stunTime: 1
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 20
+  comboID: 14
 --- !u!114 &114266312306518560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -378,8 +399,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114289158557635762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -412,12 +434,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 100
+  hitVerticalForce: 210
   damage: 5
   launcherAttack: 1
   stunTime: 2
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 40
+  comboID: 8
 --- !u!114 &114317039408773448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -454,8 +477,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114339578888678920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -477,8 +501,9 @@ MonoBehaviour:
   damage: 13
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 50
+  comboID: 15
 --- !u!114 &114384741605160384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -496,12 +521,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 60
+  hitVerticalForce: 120
   damage: 4
   launcherAttack: 0
   stunTime: 0.6
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 1
 --- !u!114 &114439238300050382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -523,8 +549,9 @@ MonoBehaviour:
   damage: 16
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 6
 --- !u!114 &114441887838009456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -546,8 +573,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114455282840800466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -584,8 +612,9 @@ MonoBehaviour:
   damage: 7
   launcherAttack: 1
   stunTime: 1
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 20
+  comboID: 13
 --- !u!114 &114549647952895390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -603,12 +632,13 @@ MonoBehaviour:
   horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
-  hitVerticalForce: 170
+  hitVerticalForce: 230
   damage: 7
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 100
+  comboID: 11
 --- !u!114 &114580028956084004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -645,8 +675,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114701395153511910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -668,8 +699,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114726924569198976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -691,8 +723,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114798065030846314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -714,8 +747,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114812955678947858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -752,8 +786,9 @@ MonoBehaviour:
   damage: 5
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 3
 --- !u!114 &114890463285721726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -775,8 +810,9 @@ MonoBehaviour:
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114903320525232538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -791,15 +827,16 @@ MonoBehaviour:
   behaviourState: 8
   horizontalForce: 0
   verticalForce: 0
-  horizontalTransform: -0.01
+  horizontalTransform: 0
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 0
   damage: 0
   launcherAttack: 0
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 0
 --- !u!114 &114957462341561162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -816,13 +853,14 @@ MonoBehaviour:
   verticalForce: 0
   horizontalTransform: 0
   verticalTransform: 0
-  hitHorizontalForce: -120
-  hitVerticalForce: 180
-  damage: 6
+  hitHorizontalForce: -100
+  hitVerticalForce: 210
+  damage: 7
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0
+  VerticalForceReducedEachHitInCombo: 100
+  comboID: 5
 --- !u!114 &114977238661760184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -844,8 +882,9 @@ MonoBehaviour:
   damage: 17
   launcherAttack: 1
   stunTime: 0
-  HorizontalForceReducedEachHitInCombo: 0
+  defenseStun: 0
   VerticalForceReducedEachHitInCombo: 0
+  comboID: 12
 --- !u!114 &114987250849772344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1182,7 +1221,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Defense Recover
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102749733967708444}
   m_Solo: 0
@@ -1642,6 +1684,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Stand2
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Playing Special
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102930882294502708}
   m_Solo: 0
@@ -1938,6 +1983,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: Stand1
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Playing Special
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102810492790276910}

@@ -89,7 +89,7 @@ public class HudManager : MonoBehaviour {
             ComboHitsCounterPlayer1.gameObject.SetActive(true);
             ComboDamageCounterPlayer1.gameObject.SetActive(true);
             ComboHitsCounterPlayer1.text = "Hits " + player1HitBoxCollider.comboCounter;
-            ComboDamageCounterPlayer1.text = "Damage " + player1HitBoxCollider.comboDamageCounter + " %";
+            ComboDamageCounterPlayer1.text = "Damage " + (int)player1HitBoxCollider.comboDamageCounter + " %";
 
         }
 
@@ -98,7 +98,7 @@ public class HudManager : MonoBehaviour {
             ComboHitsCounterPlayer2.gameObject.SetActive(true);
             ComboDamageCounterPlayer2.gameObject.SetActive(true);
             ComboHitsCounterPlayer2.text = "Hits " + player2HitBoxCollider.comboCounter;
-            ComboDamageCounterPlayer2.text = "Damage " + player2HitBoxCollider.comboDamageCounter + " %";
+            ComboDamageCounterPlayer2.text = "Damage " + (int)player2HitBoxCollider.comboDamageCounter + " %";
         }
     }
 }
