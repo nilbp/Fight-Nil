@@ -13,127 +13,127 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stand1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stand2
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Walk Back
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Walk
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Back1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsGrounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hurt Floor
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: HurtAir
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsDefending
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Defend Hit
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Laid Down
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SpecialCancel
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsInDefenceStance
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stuned
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Back Forward
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down Back
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Down Forward
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Playing Special
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Defense Recover
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -228,10 +228,10 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 230
-  damage: 3
+  damage: 4
   launcherAttack: 0
   stunTime: 0.6
-  defenseStun: 0
+  defenseStun: 0.4
   VerticalForceReducedEachHitInCombo: 35
   comboID: 7
 --- !u!114 &114154763344952558
@@ -255,8 +255,8 @@ MonoBehaviour:
   damage: 5
   launcherAttack: 1
   stunTime: 0
-  defenseStun: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0.1
+  VerticalForceReducedEachHitInCombo: 20
   comboID: 2
 --- !u!114 &114162440395700328
 MonoBehaviour:
@@ -279,7 +279,7 @@ MonoBehaviour:
   damage: 5
   launcherAttack: 1
   stunTime: 0
-  defenseStun: 0
+  defenseStun: 0.5
   VerticalForceReducedEachHitInCombo: 20
   comboID: 9
 --- !u!114 &114173969989619966
@@ -348,10 +348,10 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 150
   hitVerticalForce: 50
-  damage: 9
+  damage: 15
   launcherAttack: 1
   stunTime: 0
-  defenseStun: 0
+  defenseStun: 0.8
   VerticalForceReducedEachHitInCombo: 0
   comboID: 10
 --- !u!114 &114257565944325118
@@ -375,7 +375,7 @@ MonoBehaviour:
   damage: 7
   launcherAttack: 1
   stunTime: 1
-  defenseStun: 0
+  defenseStun: 0.4
   VerticalForceReducedEachHitInCombo: 20
   comboID: 14
 --- !u!114 &114266312306518560
@@ -435,10 +435,10 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 210
-  damage: 5
+  damage: 6
   launcherAttack: 1
   stunTime: 2
-  defenseStun: 0
+  defenseStun: 0.7
   VerticalForceReducedEachHitInCombo: 40
   comboID: 8
 --- !u!114 &114317039408773448
@@ -525,8 +525,8 @@ MonoBehaviour:
   damage: 4
   launcherAttack: 0
   stunTime: 0.6
-  defenseStun: 0
-  VerticalForceReducedEachHitInCombo: 0
+  defenseStun: 0.4
+  VerticalForceReducedEachHitInCombo: 20
   comboID: 1
 --- !u!114 &114439238300050382
 MonoBehaviour:
@@ -549,7 +549,7 @@ MonoBehaviour:
   damage: 16
   launcherAttack: 1
   stunTime: 0
-  defenseStun: 0
+  defenseStun: 0.9
   VerticalForceReducedEachHitInCombo: 0
   comboID: 6
 --- !u!114 &114441887838009456
@@ -633,10 +633,10 @@ MonoBehaviour:
   verticalTransform: 0
   hitHorizontalForce: 0
   hitVerticalForce: 230
-  damage: 7
+  damage: 11
   launcherAttack: 1
   stunTime: 0
-  defenseStun: 0
+  defenseStun: 0.2
   VerticalForceReducedEachHitInCombo: 100
   comboID: 11
 --- !u!114 &114580028956084004
@@ -781,12 +781,12 @@ MonoBehaviour:
   verticalForce: 170
   horizontalTransform: 0
   verticalTransform: 0
-  hitHorizontalForce: 100
-  hitVerticalForce: 0
-  damage: 5
+  hitHorizontalForce: 50
+  hitVerticalForce: 70
+  damage: 8
   launcherAttack: 0
   stunTime: 0
-  defenseStun: 0
+  defenseStun: 0.1
   VerticalForceReducedEachHitInCombo: 0
   comboID: 3
 --- !u!114 &114890463285721726
@@ -857,7 +857,7 @@ MonoBehaviour:
   hitVerticalForce: 210
   damage: 7
   launcherAttack: 1
-  stunTime: 0
+  stunTime: 0.4
   defenseStun: 0
   VerticalForceReducedEachHitInCombo: 100
   comboID: 5
@@ -882,7 +882,7 @@ MonoBehaviour:
   damage: 17
   launcherAttack: 1
   stunTime: 0
-  defenseStun: 0
+  defenseStun: 0.7
   VerticalForceReducedEachHitInCombo: 0
   comboID: 12
 --- !u!114 &114987250849772344
@@ -1144,9 +1144,6 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Stand1
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: Stand2
     m_EventTreshold: 0
@@ -3012,7 +3009,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Stand 2, 2 + 1
+  m_Name: Stand 2, 2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3174,7 +3171,7 @@ AnimatorStateMachine:
     m_Position: {x: 600, y: -84, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102283810036305202}
-    m_Position: {x: 648, y: 336, z: 0}
+    m_Position: {x: 624, y: 360, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102713650669206732}
     m_Position: {x: 972, y: 132, z: 0}

@@ -10,6 +10,13 @@ public class Fighter : MonoBehaviour {
         PLAYER1, PLAYER2, JOYSTICK, IA
     }
 
+    public enum Name
+    {
+        GIRL1, KUNGFU, WOLF
+    }
+
+    public Name characterName;
+
     public CharacterController2D controller;
     public Animator animator;
 
@@ -50,6 +57,11 @@ public class Fighter : MonoBehaviour {
     public FighterState currentState = FighterState.IDLE;
 
     public bool IsGrounded;
+
+    //Transformation Wolf variables
+    static float TRANSFORMATION_TIME = 15F;
+    private float transformationTimer = TRANSFORMATION_TIME;
+    private bool transformated = false;
 
     //Colliders 
     public Collider HurtBoxTorso;
@@ -119,17 +131,40 @@ public class Fighter : MonoBehaviour {
 
         animator.SetBool("IsGrounded", IsGrounded);
 
-        //facing each other handdle
-		if (gameObject.transform.position.x > oponent.gameObject.transform.position.x) {
-			gameObject.transform.localScale = new Vector3 (-1, 1, 1);
-			playerFacing = -1;
-		}
-		else {
-			gameObject.transform.localScale = new Vector3 (1, 1, 1);
-			playerFacing = 1;
-		}
+        //facing each other 
 
-		//WALKING FORKARD AND BACKWARDS
+        if (gameObject.transform.position.x > oponent.gameObject.transform.position.x)
+        {
+            if (characterName == Name.WOLF)
+            {
+                gameObject.transform.localScale = new Vector3(1, 1, 1);
+            }
+
+            else
+            {       
+                gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            }
+
+            playerFacing = -1;
+        }
+
+        else
+        {
+            if (characterName == Name.WOLF)
+            {
+                gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            }
+
+            else
+            {
+               
+                gameObject.transform.localScale = new Vector3(1, 1, 1);
+            }
+
+            playerFacing = 1;
+        }
+
+        //WALKING FORKARD AND BACKWARDS
         if (horizontalMove * playerFacing > 0.1f)
         {
             animator.SetBool("Walk", true);
@@ -280,7 +315,18 @@ public class Fighter : MonoBehaviour {
 
 		//Decrementar variable stunTime
 		if (stunTime > 0)
-			stunTime -= 1 * Time.deltaTime; 
+			stunTime -= 1 * Time.deltaTime;
+
+        if (characterName == Name.WOLF)
+        {
+            if (transformated)
+            {
+                if (transformationTimer <= 0)
+                    animator.SetBool("Transformed", false);
+
+                transformationTimer -= 1 * Time.deltaTime;
+            }
+        }
 
     }
 
@@ -297,6 +343,11 @@ public class Fighter : MonoBehaviour {
 			animator.SetBool("HurtAir", true);
         }
 
+        if (characterName == Name.WOLF)
+        {
+            animator.SetBool("Transformed", false);
+        }
+
     }
 
     public void EndAnimation(string animName)
@@ -309,5 +360,16 @@ public class Fighter : MonoBehaviour {
         animator.SetBool(animName, true);
     }
 
+    public void Stand1Stand2_False()
+    {
+        animator.SetBool("Stand1", false);
+        animator.SetBool("Stand2", false);
+    }
+
+    public void Transformation()
+    {
+        transformationTimer = TRANSFORMATION_TIME;
+        transformated = true;
+    }
 
 }

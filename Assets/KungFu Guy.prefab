@@ -213,10 +213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b902cb2a7f8375428b0b1c1eded46ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: 1
   controller: {fileID: 0}
   animator: {fileID: 0}
   life: 100
   stunTime: 0
+  defenseRecoverTime: 0
   playerFacing: 0
   rb: {fileID: 50762310924581360}
   playerType: 0

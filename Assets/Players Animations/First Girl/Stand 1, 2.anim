@@ -31,6 +31,12 @@ AnimationClip:
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
+      - serializedVersion: 2
+        time: 0.3
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -49,6 +55,12 @@ AnimationClip:
         tangentMode: 136
       - serializedVersion: 2
         time: 0.2
+        value: 0.4
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.3
         value: 0.4
         inSlope: 0
         outSlope: 0
@@ -75,6 +87,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 136
+      - serializedVersion: 2
+        time: 0.3
+        value: 0.36
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -97,6 +115,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 136
+      - serializedVersion: 2
+        time: 0.3
+        value: 0.21
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -111,6 +135,8 @@ AnimationClip:
     - time: 0.1
       value: {fileID: 21300130, guid: b6a3f3b796be8f74bb7e88174f3a3f05, type: 3}
     - time: 0.2
+      value: {fileID: 21300132, guid: b6a3f3b796be8f74bb7e88174f3a3f05, type: 3}
+    - time: 0.3
       value: {fileID: 21300132, guid: b6a3f3b796be8f74bb7e88174f3a3f05, type: 3}
     attribute: m_Sprite
     path: 
@@ -162,12 +188,13 @@ AnimationClip:
     - {fileID: 21300128, guid: b6a3f3b796be8f74bb7e88174f3a3f05, type: 3}
     - {fileID: 21300130, guid: b6a3f3b796be8f74bb7e88174f3a3f05, type: 3}
     - {fileID: 21300132, guid: b6a3f3b796be8f74bb7e88174f3a3f05, type: 3}
+    - {fileID: 21300132, guid: b6a3f3b796be8f74bb7e88174f3a3f05, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3
+    m_StopTime: 0.4
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -198,6 +225,12 @@ AnimationClip:
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
+      - serializedVersion: 2
+        time: 0.3
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -216,6 +249,12 @@ AnimationClip:
         tangentMode: 136
       - serializedVersion: 2
         time: 0.2
+        value: 0.4
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.3
         value: 0.4
         inSlope: 0
         outSlope: 0
@@ -242,6 +281,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 136
+      - serializedVersion: 2
+        time: 0.3
+        value: 0.36
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -260,6 +305,12 @@ AnimationClip:
         tangentMode: 136
       - serializedVersion: 2
         time: 0.2
+        value: 0.21
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.3
         value: 0.21
         inSlope: 0
         outSlope: 0
