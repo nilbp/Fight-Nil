@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 50155883671839152}
   - component: {fileID: 114755395088064354}
   - component: {fileID: 60199093598816816}
+  - component: {fileID: 82054397024650628}
   m_Layer: 8
   m_Name: First Girl
   m_TagString: Untagged
@@ -128,7 +129,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368607354583288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.044, y: -0.528, z: 0}
+  m_LocalPosition: {x: -0.044, y: -0.493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4370921812639902}
@@ -208,12 +209,92 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.112286925, y: -0.020301819}
-      - {x: 0.114195585, y: -0.15848374}
+    - - {x: 0.20575178, y: 0.12657142}
+      - {x: 0.20766032, y: -0.19186401}
       - {x: -0.049999952, y: -0.50587654}
-      - {x: -0.24919921, y: -0.14382648}
-      - {x: -0.26206422, y: 0.062012315}
+      - {x: -0.3159598, y: -0.21726298}
+      - {x: -0.33550084, y: 0.12877297}
       - {x: -0.06705308, y: 0.58443534}
+--- !u!82 &82054397024650628
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1569367974947766}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95180203750952480
 Animator:
   serializedVersion: 3
@@ -242,13 +323,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b902cb2a7f8375428b0b1c1eded46ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: 0
   controller: {fileID: 0}
   animator: {fileID: 0}
   life: 100
   stunTime: 0
+  defenseRecoverTime: 0
   playerFacing: 0
   rb: {fileID: 50155883671839152}
-  playerType: 1
+  playerType: 0
   oponent: {fileID: 0}
   currentState: 0
   IsGrounded: 0
@@ -267,9 +350,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a96d577e973fa439ba812b8d589058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fighter: {fileID: 114755395088064354}
   comboCounter: 0
   comboDamageCounter: 0
   comboHitData: 
+  hitParticles: {fileID: 1036227098655944, guid: 5917dfbf75cc49044a83be5cb1e57178,
+    type: 2}
+  defendHitParticles: {fileID: 1125309615554474, guid: e534d65b67ad0bf4cba99081deeca5f9,
+    type: 2}
+  soundEffect: {fileID: 8300000, guid: 9584ab63e7856d94c98ed06498a554ac, type: 3}
+  defendHitSoundEffect: {fileID: 8300000, guid: a4d44dbca5277904c86c4ee9ac903cb8,
+    type: 3}
+  selfCollider: {fileID: 58780313084563036}
 --- !u!212 &212161660239789562
 SpriteRenderer:
   m_ObjectHideFlags: 1

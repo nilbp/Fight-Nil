@@ -5,6 +5,7 @@ using UnityEngine;
 public class HitBoxCollider : MonoBehaviour {
 
     Fighter fighterOponent;
+    public Fighter fighter;
 
     public int comboCounter;
     public float comboDamageCounter = 0;
@@ -13,6 +14,16 @@ public class HitBoxCollider : MonoBehaviour {
     private int numberOfHits = 0;
 
     public List<int> comboHitData;
+
+    //Hit particles
+    public GameObject hitParticles;
+    public GameObject defendHitParticles;
+
+    //Sound hit effect
+    public AudioClip soundEffect;
+    public AudioClip defendHitSoundEffect;
+
+    public Collider2D selfCollider;
 
     private float realDamage;
 
@@ -24,16 +35,35 @@ public class HitBoxCollider : MonoBehaviour {
         {         
             fighterOponent = collision.GetComponent<Fighter>();
 
+            float yOffset = selfCollider.transform.position.y - collision.transform.position.y;
+
+            if (yOffset > 0.3)
+                yOffset = 0.3f;
+            else if (yOffset < -0.2)
+                yOffset = 0.2f;
+
             if (fighterOponent.currentState == FighterState.LAID_DOWN)
                 return;
 
-            if (fighterOponent.currentState == FighterState.DEFEND || fighterOponent.currentState == FighterState.TAKE_HIT_DEFEND)
+            if (fighterOponent.currentState == FighterState.DEFEND
+                || fighterOponent.currentState == FighterState.TAKE_HIT_DEFEND)
             {
-                fighterOponent.animator.SetTrigger("Defend Hit");
-                fighterOponent.defenseRecoverTime = fighterState.defenseStun;
-                fighterOponent.life -= (fighterState.damage * 0.04f);
-                return;
+                if (fighterState.hitType == FighterStateBehaviour.HitType.HIGH || fighterState.hitType == FighterStateBehaviour.HitType.MID)
+                {
+                    DefendHit(collision, yOffset);
+                    return;
+                }
             }
+
+            else if (fighterOponent.currentState == FighterState.DEFEND_LOW)
+            {
+                if (fighterState.hitType == FighterStateBehaviour.HitType.MID || fighterState.hitType == FighterStateBehaviour.HitType.LOW)
+                {
+                    DefendHit(collision, yOffset);
+                    return;
+                }
+            }
+
 			if (fighterOponent.currentState != FighterState.TAKE_HIT && fighterOponent.currentState != FighterState.TAKE_HIT_AIR) 
 			{
 				comboCounter = 0;
@@ -59,9 +89,28 @@ public class HitBoxCollider : MonoBehaviour {
             //Combo incrementa cada Hit
             comboCounter++;
 			comboDamageCounter += realDamage ;
-            comboHitData.Add(fighterState.comboID);         
+            comboHitData.Add(fighterState.comboID);
 
-			//L'oponent està en el aire
+            //Instantiate particles
+            GameObject particles =  Instantiate(hitParticles, collision.transform.position + new Vector3(fighterOponent.playerFacing * 0.12f, yOffset, -1), Quaternion.identity);
+            particles.transform.SetParent(fighterOponent.transform);
+
+            //Sound Effect
+            if (soundEffect != null)
+            {
+                /*int a = Random.Range(0, 2);
+                if (a == 0)
+                    fighter.PlaySound(soundEffect);
+                else if(a == 1)
+                    fighter.PlaySound(soundEffect2);
+                else
+                    fighter.PlaySound(soundEffect3);*/
+
+                fighterOponent.PlaySound(soundEffect);
+
+            }
+
+            //L'oponent està en el aire
             if (fighterOponent.currentState == FighterState.TAKE_HIT_AIR )
             {
                 
@@ -108,6 +157,21 @@ public class HitBoxCollider : MonoBehaviour {
             }
             //Reset hit variable
             numberOfHits = 0;
+        }
+    }
+
+    void DefendHit(Collider2D collision, float yOffset)
+    {
+        fighterOponent.animator.SetTrigger("Defend Hit");
+        fighterOponent.defenseRecoverTime = fighterState.defenseStun;
+        fighterOponent.life -= (fighterState.damage * 0.04f);
+
+        if (defendHitSoundEffect != null && fighterOponent.currentState != FighterState.LAID_DOWN)
+        {
+            fighterOponent.PlaySound(defendHitSoundEffect);
+
+            GameObject defendParticles = Instantiate(defendHitParticles, collision.transform.position + new Vector3(fighterOponent.playerFacing * 0.12f, yOffset, -1), defendHitParticles.transform.rotation);
+            defendParticles.transform.SetParent(fighterOponent.transform);
         }
     }
 }

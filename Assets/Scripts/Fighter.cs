@@ -19,6 +19,7 @@ public class Fighter : MonoBehaviour {
 
     public CharacterController2D controller;
     public Animator animator;
+    private AudioSource audioPlayer;
 
     static float MAX_LIFE = 100;
 
@@ -68,7 +69,7 @@ public class Fighter : MonoBehaviour {
     public Collider HurtBoxLegs;
     public Collider2D groundCheck;
     public Collider2D floorCollider;
-
+    
     //Variables controlar els diferents jugadors player 1 i player 2
     string horizontalMovement;
 	string verticalMovement;
@@ -82,6 +83,7 @@ public class Fighter : MonoBehaviour {
 
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioPlayer = GetComponent<AudioSource>();
 
         if (playerType == PlayerType.PLAYER1)
         {
@@ -263,15 +265,29 @@ public class Fighter : MonoBehaviour {
             animator.SetBool("Stand2", true);   
         }
 
-		//Activar IsInDefenceStance quan està en la posició de defença
-		if (currentState == FighterState.DEFEND)
-			animator.SetBool ("IsInDefenceStance", true);
-		else 
-			animator.SetBool ("IsInDefenceStance", false);
+        //Activar IsInDefenceStance quan està en la posició de defença
+        if (currentState == FighterState.DEFEND)
+        {
+            animator.SetBool("IsInDefenseStance", true);
+            animator.SetBool("IsInLowDefenseStance", false);
+
+        }
+        else if (currentState == FighterState.DEFEND_LOW)
+        {
+            animator.SetBool("IsInLowDefenseStance", true);
+            animator.SetBool("IsInDefenseStance", false);
+
+        }
+        else
+        {
+            animator.SetBool("IsInDefenseStance", false);
+            animator.SetBool("IsInLowDefenseStance", false);
+
+        }
 
 
-		//posa a TRUE Stuned quan el stunTime sigui 0
-		if (stunTime <= 0 && currentState == FighterState.TAKE_HIT)
+        //posa a TRUE Stuned quan el stunTime sigui 0
+        if (stunTime <= 0 && currentState == FighterState.TAKE_HIT)
 			animator.SetBool ("Stuned", false);
 		
 		//Set Trigger from Special attakcs
@@ -304,13 +320,18 @@ public class Fighter : MonoBehaviour {
 
 		if(downSpecial <= 0)
 		{
-			animator.SetBool ("Down Forward", false);
-			animator.SetBool ("Down Back", false);
+            if (currentState != FighterState.ATTACK)
+            {
+                animator.SetBool("Down Forward", false);
+                animator.SetBool("Down Back", false);
+            }
 		}
 		if (backSpecial <= 0) 
 		{
-			animator.SetBool ("Back Forward", false);
-
+            if (currentState != FighterState.ATTACK)
+            {
+                animator.SetBool("Back Forward", false);
+            }
 		}
 
 		//Decrementar variable stunTime
@@ -327,7 +348,6 @@ public class Fighter : MonoBehaviour {
                 transformationTimer -= 1 * Time.deltaTime;
             }
         }
-
     }
 
     public void GetHurt(string mode)
@@ -348,6 +368,11 @@ public class Fighter : MonoBehaviour {
             animator.SetBool("Transformed", false);
         }
 
+    }
+
+    public void PlaySound(AudioClip sound)
+    {
+        GameUtils.PlaySound(sound, audioPlayer);
     }
 
     public void EndAnimation(string animName)
@@ -372,4 +397,13 @@ public class Fighter : MonoBehaviour {
         transformated = true;
     }
 
+    public void CancelEnabled()
+    {
+        animator.SetBool("Cancel", true);
+    }
+
+    public void CancelDisabled()
+    {
+        animator.SetBool("Cancel", false);
+    }
 }

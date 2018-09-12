@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f34a7b3f2ea872146ac11fef43b68b35
+timeCreated: 1536536464
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lighthouse Personal Use
+  fontNames:
+  - Lighthouse Personal Use
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class HudManager : MonoBehaviour {
@@ -26,6 +27,8 @@ public class HudManager : MonoBehaviour {
 
 	public Text flawlessVictory;
 
+    public Button playAgainButton;
+
     public static bool isGroundedEndComboCounter;
 
 	public bool practice;
@@ -46,8 +49,9 @@ public class HudManager : MonoBehaviour {
             player2Wins.gameObject.SetActive(true);
             Time.timeScale = 0;
             player1.life = 0;
+            playAgainButton.gameObject.SetActive(true);
 
-			if (player2.life == 100) 
+            if (player2.life == 100) 
 			{
 				flawlessVictory.gameObject.SetActive (true);
 			}
@@ -58,8 +62,9 @@ public class HudManager : MonoBehaviour {
             player1Wins.gameObject.SetActive(true);
             Time.timeScale = 0;
             player2.life = 0;
+            playAgainButton.gameObject.SetActive(true);
 
-			if (player1.life == 100) 
+            if (player1.life == 100) 
 			{
 				flawlessVictory.gameObject.SetActive (true);
 			}
@@ -100,5 +105,23 @@ public class HudManager : MonoBehaviour {
             ComboHitsCounterPlayer2.text = "Hits " + player2HitBoxCollider.comboCounter;
             ComboDamageCounterPlayer2.text = "Damage " + (int)player2HitBoxCollider.comboDamageCounter + " %";
         }
+    }
+
+    public void PlayAgain()
+    {
+        //Time.timeScale = 1;
+
+        SceneManager.LoadScene("Scene 1");
+        /*
+        player1.life = 100;
+        player2.life = 100;
+
+        //player1.gameObject.transform.Translate(new Vector3(-1.5f, -2, 0));
+        //player2.gameObject.transform.Translate(new Vector3(0.5f, -2, 0));
+
+        playAgainButton.gameObject.SetActive(false);
+        flawlessVictory.gameObject.SetActive(false);
+        player1Wins.gameObject.SetActive(false);
+        player2Wins.gameObject.SetActive(false);*/
     }
 }

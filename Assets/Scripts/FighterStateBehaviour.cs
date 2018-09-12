@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FighterStateBehaviour : StateMachineBehaviour {
 
+    public enum HitType {HIGH, MID, LOW };
+
     public FighterState behaviourState;
 
     public float horizontalForce;
@@ -18,6 +20,10 @@ public class FighterStateBehaviour : StateMachineBehaviour {
     public bool launcherAttack;
 	public float stunTime;
     public float defenseStun;
+
+    public HitType hitType;
+    
+    public AudioClip soundEffect;
 
     //public float HorizontalForceReducedEachHitInCombo;
     public float VerticalForceReducedEachHitInCombo;
@@ -35,14 +41,24 @@ public class FighterStateBehaviour : StateMachineBehaviour {
             fighter = animator.gameObject.GetComponent<Fighter>();
         }
 
-		if (behaviourState == FighterState.ATTACK)
-		{
-			HitBoxCollider.fighterState = this;
-		}
+        if (behaviourState == FighterState.ATTACK || behaviourState == FighterState.TAKE_HIT_AIR
+            || behaviourState == FighterState.TAKE_HIT || behaviourState == FighterState.TAKE_HIT_DEFEND)
+        {
+            HitBoxCollider.fighterState = this;
+            fighter.animator.SetBool("Cancel", false);
+        }
+        else
+        {
+            fighter.animator.SetBool("Cancel", true);
+        }
 
         fighter.currentState = behaviourState;
 		playerFacing = fighter.playerFacing;
 
+        if (soundEffect != null)
+        {
+            fighter.PlaySound(soundEffect);
+        }
 
 		//Si és colpejat per qualsevol attack sigui launcher o no però es manté en l'aire
         if (behaviourState == FighterState.TAKE_HIT_AIR)
